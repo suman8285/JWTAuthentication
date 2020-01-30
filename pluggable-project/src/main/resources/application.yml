@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+    
+auth:
+  useLocalJKSForPublicKey: true
+  bypassAuth: false
+  timeOffset: 28800
+  requirePublicKeyRefresh: false
+  cosPublicKeyURL: https://google.com.com
+  key: classpath:suman.jks
+  
+countries:
+  country: india
+  
+pns:
+   publicKeyRefreshInterval: 28800000
+   
+request:
+  readTimeout: 10000
+  connectionTimeout: 10000
